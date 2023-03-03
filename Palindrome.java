@@ -12,4 +12,15 @@ public class Palindrome
 	else
 	   System.out.println("Not Palindrome");
      }
+     public static boolean isPalindrome(int n)
+     {
+	int temp=n,rev=0;
+	while(n!=0)
+	{
+	    int d=n%10;
+	    n=n/10;
+	    rev=rev*10+d;
+	}
+	return temp==rev;
+     }
 }
